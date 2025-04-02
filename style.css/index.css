@@ -4,18 +4,16 @@ padding: 0;
 }
 
 body{
-    background: url(image/france.png);
-    background-size: cover;
-    background-position: center;
-    background-image: no-repeat;
-    background-attachment: fixed;
-  
+  background-color: whitesmoke;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 header {
     width: 100%;
     background-color: transparent;
+    position: fixed;
     box-shadow: 0 10px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
 }
 
 nav{
@@ -28,6 +26,7 @@ nav{
 h2{
     color: #ffde59;
     margin-left: 50px;  
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
  }
 
 ul {
@@ -42,28 +41,45 @@ ul li {
 
 ul li a {
     color: #ffde59;
+    text-decoration: none;
     font-size: 20px;
     font-family:Georgia, 'Times New Roman', Times, serif;
+    transition: all 0.9s ease;
 }
 
 ul li a:hover{
     color: white;
 }
 
+.home{
+    background: url(image/france.png);
+    background-size: cover;
+    background-position: center;
+    background-image: no-repeat;
+ 
+    min-height: 100vh;
+      display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 100px;
+}
+
 .home h3 {
     display: flex;
     justify-content: center;
     font-size: 60px;
-    margin-top: 130px;
+    margin-bottom: 20px;
     color: #ffde59;
     width: 100%; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .home h2 {
    text-align: center;
-   
     font-size: 185px;
+    margin-bottom: 100px;
     color: #ffde59;
     width: 94%; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
