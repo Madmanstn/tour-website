@@ -43,43 +43,113 @@ ul li a {
     color: #ffde59;
     text-decoration: none;
     font-size: 20px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
     transition: all 0.9s ease;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 ul li a:hover{
     color: white;
 }
 
+.main {
+    text-align: center;
+    width: 100%;
+}
+
+
 .home{
     background: url(image/france.png);
     background-size: cover;
     background-position: center;
     background-image: no-repeat;
- 
     min-height: 100vh;
-      display: flex;
+    display: flex;
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 100px;
+
 }
 
 .home h3 {
     display: flex;
     justify-content: center;
     font-size: 60px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #ffde59;
     width: 100%; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
 .home h2 {
-   text-align: center;
+    text-align: center;
     font-size: 185px;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     color: #ffde59;
     width: 94%; 
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
 }
 
+
+.about {
+    padding: 100px;
+    background: url(/style.css/image/background.png);
+    min-height: 100vh;  
+    padding-bottom: 100px;
+}
+
+.aboutfrance {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.aboutfrance h2 {
+    text-align: center;
+    font-size: 50px;
+    color: #ffde59;
+    text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.5); 
+    margin-bottom: 100px;
+}
+
+.container {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 50px;
+}
+
+.container:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.content-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.info {
+    font-size: 20px;
+    flex: 1;
+}
+
+.info span {
+    font-size: 25px;
+    color: brown;
+    font-weight: bold;
+}
+
+.image {
+    flex: 1;
+    text-align: center;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
