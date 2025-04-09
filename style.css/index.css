@@ -176,7 +176,7 @@
     
     .tour {
         padding: 100px 20px;
-        min-height: 100vh;
+        height: 130vh;
         background-color: rgb(36, 31, 31);
         display: flex;
         flex-direction: column;
@@ -240,7 +240,6 @@
         width: 100%;
         background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
         padding: 20px;
-        color: white;
         transform: translateY(100%);
         transition: transform 0.5s ease;
     }
@@ -252,8 +251,23 @@
     .location-info h3 {
         color: #ffde59;
         margin-bottom: 10px;
-        font-size: 1.2rem;
+        font-size: 20px;
         text-align: center;
     }
 
+    .food{
+        padding: 100px 20px;
+        height: 100vh;
+        background-color: rgb(51, 48, 48);
+        display: flex;
+        justify-content: center;
+    }
+    
+    .food h2{
+        text-align: center;
+        font-size: 50px;
+        color: #ffde59;
+        text-shadow: 5px 5px 4px rgba(2, 2, 2, 0.822);
+        margin-bottom: 30px;
+    }
 
