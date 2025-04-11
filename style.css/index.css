@@ -261,10 +261,12 @@
 
     .food{
         padding: 100px 20px;
-        height: 100vh;
+        height: 70vh;
         background-color: rgb(51, 48, 48);
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+       
     }
     
     .food h2{
@@ -275,3 +277,64 @@
         margin-bottom: 30px;
     }
 
+    .food-description{
+        color: white;
+        text-align: center;
+        max-width: 800px;
+        font-size: 20px;
+        margin-bottom: 50px;
+        line-height: 1.6;
+    }
+
+    
+.food-gallery {
+    width: 100%;
+    max-width: 1200px;
+    display: flex; 
+    flex-wrap: nowrap;  /* Keep items in a single row */
+    overflow-x: auto;  
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0 auto;  /* Center the gallery */
+}
+
+.food-card {
+    position: relative;
+    flex: 0 0 300px;  /* Fixed width for each card */
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    width: 100%;  /* Fix the width to cover the card */
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.food-card:hover img {
+    transform: scale(1.1);  /* Zoom effect on hover */
+}
+
+.food-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+    padding: 10px;
+    text-align: center;
+}
+
+.food-info h3 {
+    color: #ffde59;
+    font-size: 18px;
+    margin: 0;
+}
