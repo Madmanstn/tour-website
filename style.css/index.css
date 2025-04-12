@@ -51,6 +51,8 @@
         color: white;
     }
 
+    
+
     .main {
         text-align: center;
         width: 100%;
@@ -157,7 +159,7 @@
 
     .info span {
         font-size: 25px;
-        color: brown;
+        color: #ffd11b;
         font-weight: bold;
     }
 
@@ -176,7 +178,7 @@
     
     .tour {
         padding: 100px 20px;
-        height: 130vh;
+        height: 150vh;
         background-color: rgb(36, 31, 31);
         display: flex;
         flex-direction: column;
@@ -286,55 +288,55 @@
         line-height: 1.6;
     }
 
-    
-.food-gallery {
-    width: 100%;
-    max-width: 1200px;
-    display: flex; 
-    flex-wrap: nowrap;  /* Keep items in a single row */
-    overflow-x: auto;  
-    gap: 20px;
-    padding: 20px 0;
-    margin: 0 auto;  /* Center the gallery */
-}
+        
+    .food-gallery {
+        width: 100%;
+        max-width: 1200px;
+        display: flex; 
+        flex-wrap: nowrap;  /* Keep items in a single row */
+        overflow-x: auto;  
+        gap: 20px;
+        padding: 20px 0;
+        margin: 0 auto;  
+    }
 
-.food-card {
-    position: relative;
-    flex: 0 0 300px;  /* Fixed width for each card */
-    height: 250px;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    transition: transform 0.3s ease;
-}
+    .food-card {
+        position: relative;
+        flex: 0 0 300px;  /* Fixed width for each card */
+        height: 250px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        transition: transform 0.3s ease;
+    }
 
-.food-card:hover {
-    transform: translateY(-10px);
-}
+    .food-card:hover {
+        transform: translateY(-10px);
+    }
 
-.food-card img {
-    width: 100%;  /* Fix the width to cover the card */
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.5s ease;
-}
+    .food-card img {
+        width: 100%; 
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.5s ease;
+    }
 
-.food-card:hover img {
-    transform: scale(1.1);  /* Zoom effect on hover */
-}
+    .food-card:hover img {
+        transform: scale(1.1); 
+    }
 
-.food-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
-    padding: 10px;
-    text-align: center;
-}
+    .food-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
+        padding: 10px;
+        text-align: center;
+    }
 
-.food-info h3 {
-    color: #ffde59;
-    font-size: 18px;
-    margin: 0;
-}
+    .food-info h3 {
+        color: #ffde59;
+        font-size: 18px;
+        margin: 0;
+    }
